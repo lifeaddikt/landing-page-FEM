@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__logo"><img src="images/logo.svg" alt="Logo Sunnyside"></h1>
+    <nav class="menu" role="navigation" aria-label="primary-navigation" data-visible="false">
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li class="contact-btn">Contact</li>
+      </ul>
+    </nav>
+    <button class="burger-button" aria-expanded="false" type="button" aria-controls="primary-navigation"></button>
+  </header>
+
+  <main>
+
+  <section class="first-section">
+  <h2>We are
+     creatives</h2>
+  <img src="images/icon-arrow-down.svg" alt="Scroller pour parcourir la suite">
+</section>
+
+<section class="second-section">
+  <div class="illustration egg"></div>
+  <div class="content">
+  <h3>Transform your
+     brand</h3>
+
+  <p> We are a full-service creative agency specializing in helping brands grow fast. 
+    Engage your clients through compelling visuals that do most of the marketing for you.</p>
+
+  <a href="#">Learn more</a>
+</div>
+</section>
+
+<section class="third-section">
+
+  <div class="illustration stand-out"></div>
+
+  <div class="content">
+
+  <h3>Stand out to the right audience</h3>
+
+  <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+
+  <a href="#">Learn more</a>
+</div>
+</section>
+
+
+<!-- GRAPHIC DESIGN -->
+<div class="flex-sections">
+<section class="full-height-section graphic">
+<h3>Graphic design</h3>
+
+<p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+</section>
+
+<!-- PHOtOGRAPHY -->
+<section class="full-height-section photography">
+<h3>Photography</h3>
+<p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+</section>
+</div>
+
+
+<!-- Testiomial Section -->
+<section class="testimonial">
+
+<h3 class="testimonial__title">Client testimonials</h3>
+
+<div class="testimonial-list">
+
+<blockquote class="testimonial-item">
+    <img src="images/image-emily.jpg" alt="Photo de Emily R.">
+    <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+  <footer>
+      <cite class="author">Emily R.</cite><cite class="role">Marketing Director</cite>
+  </footer>
+</blockquote>
+
+<blockquote class="testimonial-item">
+  <img src="images/image-thomas.jpg" alt="Photo de Thomas S.">
+  <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+<footer>
+    <cite class="author">Thomas S.</cite><cite class="role">Chief Operating Officer</cite>
+</footer>
+</blockquote>
+
+<blockquote class="testimonial-item">
+  <img src="images/image-jennie.jpg" alt="Photo de Jennie F.">
+  <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+<footer>
+    <cite class="author">Jennie F.</cite><cite class="role">Business Owner</cite>
+</footer>
+</blockquote>
+</div>
+
+</section>
+
+  
+  
+<div class="mozaique">
+  <div class="milk"></div>
+  <div class="orange"></div>
+  <div class="cone"></div>
+  <div class="suggar"></div>
+</div>
+
+  <footer class="footer">
+
+    <img class="footer__logo" src="images/logo.svg" alt="Logo Sunnyside">
+
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+
+    <ul class="footer__social-medias">
+      <li><img src="images/icon-facebook.svg" alt="Logo Facebook"></li>
+      <li><img src="images/icon-instagram.svg" alt="Logo Instagram"></li>
+      <li><img src="images/icon-twitter.svg" alt="Logo Twitter"></li>
+      <li><img src="images/icon-pinterest.svg" alt="Logo Pinterest"></li>
+    </ul>
+</footer>
+</main>
+
+
+<script>
+  const btn = document.querySelector('.burger-button');
+  const menu = document.querySelector('.menu');
+
+  btn.addEventListener('click', () => {
+    let isOpen = btn.getAttribute('aria-expanded');
+
+    if(isOpen == "false"){
+      btn.setAttribute('aria-expanded', true);
+      menu.setAttribute('data-visible', true);
+    } else {
+      btn.setAttribute('aria-expanded', false);
+      menu.setAttribute('data-visible', false);
+    }
+  })
+</script>
+</body>
+</html>

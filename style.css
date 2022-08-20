@@ -651,6 +651,14 @@ section .content a {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
+    aspect-ratio: 2/3;
+    max-height: 450px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .mozaique > div {
+    max-height: 600px;
   }
 }
 

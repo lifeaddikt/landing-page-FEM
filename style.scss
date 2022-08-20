@@ -517,6 +517,12 @@ section {
 
     @media (min-width:998px){
         flex:1 1 25%;
+        aspect-ratio: 2/3;
+        max-height:450px;
+    }
+
+    @media (min-width:1400px){
+        max-height:600px;
     }
 }
 
